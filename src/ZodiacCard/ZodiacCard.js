@@ -1,9 +1,11 @@
 import './ZodiacCard.css';
 
-export default function ZodiacCard() {
+export default function ZodiacCard({ name, dates }) {
   return (
-    <div>
-
+    <div className='zodiac-card'>
+      <p>{name}</p>
+      <p>{dates}</p>
+      <img src={`/images/${name}.png`}/>
     </div>
   );
 }
